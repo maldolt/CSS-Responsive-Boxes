@@ -1,3 +1,49 @@
 body {
   background: blanchedalmond;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+
+}
+.a {
+  height: 100px;
+  background-color: grey;
+  margin-bottom: 1rem;
+}
+
+.b {
+  height: 400px;
+  background-color: rgb(207, 175, 175);
+  margin-bottom: 1rem;
+}
+
+.c {
+  height: 100px;
+  background-color: rgb(181, 168, 168);
+  margin-bottom: 1rem;
+}
+
+.a, .b, .c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black solid 2px;
+}
+
+@media only screen and (min-width: 992px){
+  .bc{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .b {
+    width: 80%;
+  }
+  .c {
+    width: 20%;
+    height: auto;
+  }
+
 }
