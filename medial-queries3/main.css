@@ -1,3 +1,58 @@
 body {
   background: peachpuff;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.a, .b, .c, .d, .e, .f, .g, .h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: blueviolet;
+  border: black solid 3px;
+}
+
+.b, .c, .d, .e, .f, .g {
+  width: 30%;
+}
+ .h {
+  height: 200px;
+ }
+
+ .bcdefg{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+ }
+ .bcdefgh{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+ }
+@media only screen and (min-width: 992px) {
+
+  .a, .b, .c, .d, .e, .f, .g, .h {
+    height: 200px;
+  }
+  .bcdefgh {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .bcdefg {
+    width: 75%;
+  }
+  .h {
+    width: 25%;
+    height: auto;
+  }
 }
